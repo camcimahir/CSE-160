@@ -1,4 +1,7 @@
-
+/*
+name: Mahir Camci
+email: mcamci@ucsc.edu
+*/
 let canvas, ctx;
 
 function main() {
