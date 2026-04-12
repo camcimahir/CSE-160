@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point with a mouse click</title>
+    <style>
+      .comparison-row {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .reference-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .reference-image {
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+        border: 1px solid #999;
+        background: #fff;
+      }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <div class="comparison-row">
+      <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+      </canvas>
+      <div class="reference-wrap">
+        <strong>Reference Image</strong>
+        <img class="reference-image" src="drawnImage.jpeg" alt="Hand-drawn reference image" />
+      </div>
+    </div>
+    <p>
+    <button type="button" id="clearbutton">Clear</button>
+    <p>
+    <button type="button" id="pointButton">Point</button>
+    <button type="button" id="triButton">Triangle</button>
+    <button type="button" id="circleButton">Circle</button>
+    <button type="button" id="polygonButton">Polygon</button>
+    <button type="button" id="drawMyShapeButton">Draw my shape</button>
+    
+    <p>
+    Red <input type="range" min="0" max="100" value ="100" id="redSlider">
+    <p>
+    Green <input type="range" min="0" max="100" value ="0" id="greenSlider">
+    <p>
+    Blue <input type="range" min="0" max="100" value ="0" id="blueSlider">
+    <p>
+    Size <input type="range" min="5" max="40" value ="10" id="sizeSlider">
+    (circles) segment count: <input type="range" min="3" max="20" value ="10" id="segmentSlider">
+    <p>
+    (polygon) point count: <input type="range" min="3" max="10" value ="4" id="polygonSlider">
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Polygon.js"></script>
+    <script src="asgn1.js"></script>
+  </body>
+</html>
