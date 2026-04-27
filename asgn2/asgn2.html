@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2: Drawing</title>
+    <style>
+      .comparison-row {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .reference-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .reference-image {
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+        border: 1px solid #999;
+        background: #fff;
+      }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <div class="comparison-row">
+      <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+      </canvas>
+    </div>
+    <p id="numdot">ms: 0 fps: 0</p>
+    <p>Camera Angle: <input type="range" min="-180" max="180" value="5" id="angleSlider"></p>
+    <p>
+      Left Arm: <input type="range" min="-90" max="90" value="0" id="leftArmSlider">
+      Left Forearm: <input type="range" min="0" max="135" value="0" id="leftForearmSlider">
+    </p>
+    <p>
+      Right Arm: <input type="range" min="-90" max="90" value="0" id="rightArmSlider">
+      Right Forearm: <input type="range" min="0" max="135" value="0" id="rightForearmSlider">
+    </p>
+    <p>
+      Left Leg: <input type="range" min="-45" max="90" value="0" id="leftLegSlider">
+      Left Shin: <input type="range" min="0" max="135" value="0" id="leftShinSlider">
+    </p>
+    <p>
+      Right Leg: <input type="range" min="-45" max="90" value="0" id="rightLegSlider">
+      Right Shin: <input type="range" min="0" max="135" value="0" id="rightShinSlider">
+    </p>
+    <p>
+      Left Wrist: <input type="range" min="-90" max="90" value="0" id="leftWristSlider">
+      Right Wrist: <input type="range" min="-90" max="90" value="0" id="rightWristSlider">
+    </p>
+    <p>
+      Left Ankle: <input type="range" min="-60" max="60" value="0" id="leftAnkleSlider">
+      Right Ankle: <input type="range" min="-60" max="60" value="0" id="rightAnkleSlider">
+    </p>
+    <p>
+      Run Animation:
+      <button type="button" id="animationYellowOnButton">On</button>
+      <button type="button" id="animationYellowOffButton">Off</button>
+      <span style="margin-left:12px; color:#555;">Tip: drag the canvas to rotate. Shift+click for a surprise.</span>
+    </p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Polygon.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cylinder.js"></script>
+    <script src="asgn2.js"></script>
+  </body>
+</html>
