@@ -1,3 +1,5 @@
+// After setting up the basic system I utilizied LLM's to produce some of the code, especially for the animation.
+
 // ColoredPoint.js (c) 2012 matsuda
 let VSHADER_SOURCE= `
 precision mediump float;

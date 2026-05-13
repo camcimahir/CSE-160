@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 3: World</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #e8f4ff 0%, #f7fbff 100%);
+        color: #123;
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .panel {
+        margin: 14px 0 18px;
+        font-size: 14px;
+      }
+      .stage {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+      }
+      canvas {
+        border: 1px solid #9fb4c7;
+        background: #cfe8ff;
+        box-shadow: 0 12px 30px rgba(16, 44, 76, 0.12);
+        cursor: crosshair;
+        vertical-align: middle;
+      }
+      .stage::after {
+        content: "+";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(30, 50, 80, 0.5);
+        pointer-events: none;
+      }
+      #hud {
+        margin-top: 12px;
+        font-size: 13px;
+        color: #234;
+      }
+      .hint {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #567;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="panel">
+        Assignment 3: World &mdash; click canvas for mouse look (Esc to unlock)
+      </div>
+      <div class="stage">
+        <canvas id="webgl" width="600" height="600">
+          Please use a browser that supports "canvas"
+        </canvas>
+      </div>
+      <div id="hud"></div>
+      <div class="hint">WASD move &middot; QE turn &middot; F place block &middot; G remove block</div>
+    </div>
+
+    <script src="../asgn2/lib/webgl-utils.js?v=1"></script>
+    <script src="../asgn2/lib/webgl-debug.js?v=1"></script>
+    <script src="../asgn2/lib/cuon-utils.js?v=1"></script>
+    <script src="../asgn2/lib/cuon-matrix.js?v=1"></script>
+    <script src="Cylinder.js"></script>
+    <script src="Cube.js?v=4"></script>
+    <script src="camera.js?v=4"></script>
+    <script src="World.js?v=8"></script>
+  </body>
+</html>
