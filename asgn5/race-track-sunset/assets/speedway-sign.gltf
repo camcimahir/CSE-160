@@ -1,0 +1,166 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Codex race-track-sunset"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Textured Speedway Sign",
+      "mesh": 0,
+      "translation": [
+        0,
+        1.2,
+        0
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Loaded textured GLTF sign",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 4,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "data:application/octet-stream;base64,zczMvwAAAAAAAAAAzczMPwAAAAAAAAAAzczMP2Zmhj8AAAAAzczMv2Zmhj8AAAAAAACgv5qZmb+PwvU9ZmaGv5qZmb+PwvU9ZmaGvwAAAACPwvU9AACgvwAAAACPwvU9AACgv5qZmb+PwvW9ZmaGv5qZmb+PwvW9ZmaGvwAAAACPwvW9AACgvwAAAACPwvW9ZmaGP5qZmb+PwvU9AACgP5qZmb+PwvU9AACgPwAAAACPwvU9ZmaGPwAAAACPwvU9ZmaGP5qZmb+PwvW9AACgP5qZmb+PwvW9AACgPwAAAACPwvW9ZmaGPwAAAACPwvW9AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQACAAAAAgADAAQABQAGAAQABgAHAAkACAALAAkACwAKAAgABAAHAAgABwALAAUACQAKAAUACgAGAAcABgAKAAcACgALAAgACQAFAAgABQAEAAwADQAOAAwADgAPABEAEAATABEAEwASABAADAAPABAADwATAA0AEQASAA0AEgAOAA8ADgASAA8AEgATABAAEQANABAADQAMAA==",
+      "byteLength": 796
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 240,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 240,
+      "byteLength": 240,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 480,
+      "byteLength": 160,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 640,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 652,
+      "byteLength": 144,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 20,
+      "type": "VEC3",
+      "min": [
+        -1.6,
+        -1.2,
+        -0.12
+      ],
+      "max": [
+        1.6,
+        1.05,
+        0.12
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 20,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 20,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 72,
+      "type": "SCALAR"
+    }
+  ],
+  "images": [
+    {
+      "uri": "speedway-sign.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    }
+  ],
+  "materials": [
+    {
+      "name": "embedded sign texture",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "roughnessFactor": 0.7,
+        "metallicFactor": 0
+      }
+    },
+    {
+      "name": "matte black posts",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.02,
+          0.018,
+          0.018,
+          1
+        ],
+        "roughnessFactor": 0.8,
+        "metallicFactor": 0
+      }
+    }
+  ]
+}

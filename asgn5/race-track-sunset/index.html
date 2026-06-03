@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Speedway</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <aside class="hud" aria-label="Scene status">
+      <h1>Sunset Speedway</h1>
+      <p id="lapReadout">Cars are warming up...</p>
+      <p class="note">
+        Wow Point: two animated cars with working dusk headlights, glowing track
+        beacons, and a follow-camera toggle.
+      </p>
+      <div class="control-buttons">
+        <button id="followToggle" type="button" aria-pressed="false">Follow Cam</button>
+        <button id="rainToggle" type="button" aria-pressed="false">Rain Off</button>
+      </div>
+    </aside>
+    <aside class="camera-help" aria-label="Camera controls">
+      <h2>Camera</h2>
+      <p>Drag to look around</p>
+      <p>Scroll to zoom</p>
+      <p>Right-drag to pan</p>
+    </aside>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
