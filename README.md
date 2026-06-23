@@ -10,7 +10,7 @@ A collection of interactive 3D graphics projects built from scratch during CSE 1
 
 Animated 3D racing environment with spline-based car animation, shadow mapping, rain particles, and GLTF model loading.
 
-<video src="sunset-speedway.mp4" autoplay loop muted playsinline width="100%"></video>
+![Sunset Speedway preview](sunset-speedway.gif)
 
 **[Open Project →](https://camcimahir.github.io/CSE-160/sunset-speedway/race-track-sunset/index.html)**
 
@@ -20,7 +20,7 @@ Animated 3D racing environment with spline-based car animation, shadow mapping, 
 
 Custom WebGL engine implementing Phong illumination with dynamic point lights, spotlights, normal matrices, and OBJ parsing.
 
-<video src="lighting.mp4" autoplay loop muted playsinline width="100%"></video>
+![Phong Lighting Engine preview](lighting.gif)
 
 **[Open Project →](https://camcimahir.github.io/CSE-160/lighting-engine/asgn4.html)**
 
