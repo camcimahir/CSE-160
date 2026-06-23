@@ -2,7 +2,7 @@
 
 A collection of interactive 3D graphics projects built from scratch during CSE 160 (Computer Graphics) at UC Santa Cruz. Each project progressively builds on the last — from basic 2D vector math up to a fully animated Three.js racing scene with shadow mapping and particle systems.
 
-**[Live Site →](https://camcimahir.github.io/CSE-160/)**
+**[Live Site →](https://camcimahir.github.io/computer-graphics/)**
 
 ## Featured Projects
 
@@ -12,7 +12,7 @@ Animated 3D racing environment with spline-based car animation, shadow mapping, 
 
 ![Sunset Speedway preview](sunset-speedway.gif)
 
-**[Open Project →](https://camcimahir.github.io/CSE-160/sunset-speedway/race-track-sunset/index.html)**
+**[Open Project →](https://camcimahir.github.io/computer-graphics/sunset-speedway/race-track-sunset/index.html)**
 
 ---
 
@@ -22,7 +22,7 @@ Custom WebGL engine implementing Phong illumination with dynamic point lights, s
 
 ![Phong Lighting Engine preview](lighting.gif)
 
-**[Open Project →](https://camcimahir.github.io/CSE-160/lighting-engine/asgn4.html)**
+**[Open Project →](https://camcimahir.github.io/computer-graphics/lighting-engine/asgn4.html)**
 
 ---
 
